@@ -56,8 +56,9 @@
 /* Stil für die Bilder in den Optionen */
 .option-image {
     max-width: 100%;
-    max-height: 40%;
+    max-height: 40vh; /* Bilder passen sich der Bildschirmhöhe an */
     height: auto;
+    object-fit: contain; /* Bild bleibt vollständig sichtbar, ohne gestreckt zu werden */
     border-radius: 5px;
 }
 
@@ -189,6 +190,7 @@ p, h1, h2, h3 {
 
     .option-image {
         max-width: 100%;
-        max-height: 40%;
+        max-height: 40vh;
+        object-fit: contain;
     }
 }
