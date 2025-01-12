@@ -15,7 +15,7 @@
 
 /* Stil für die Fragenüberschrift */
 .question h2 {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 4rem); /* Dynamische Schriftgröße */
     text-align: center;
     margin-bottom: 2vh;
 }
@@ -29,7 +29,7 @@
     gap: 5%;
     height: 50%;
     width: 100%;
-    flex-wrap: nowrap; /* Kein Umbruch */
+    flex-wrap: nowrap;
 }
 
 /* Stil für jede Option */
@@ -56,7 +56,7 @@
 
 /* Stil für die Bilder in den Optionen */
 .option-image {
-    max-width: 90%; /* Bildgröße angepasst */
+    max-width: 90%;
     max-height: 50%;
     height: auto;
     border-radius: 5px;
@@ -64,19 +64,19 @@
 
 /* Stil für den Text innerhalb der Optionen */
 .option p {
-    font-size: 2.5vw;
+    font-size: clamp(1rem, 2.5vw, 3rem); /* Dynamische Schriftgröße */
     margin-top: 10px;
     text-align: center;
 }
 
 /* Stil für das Ergebniscontainer */
 #result-container h2 {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 4rem);
     text-align: center;
 }
 
 #result-container p {
-    font-size: 2.5vw;
+    font-size: clamp(1rem, 2.5vw, 3rem);
     text-align: center;
     margin: 10px 0;
 }
@@ -86,7 +86,7 @@
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    font-size: 2.5vw;
+    font-size: clamp(1rem, 2.5vw, 3rem);
     border: none;
     background-color: #007BFF;
     color: white;
@@ -121,9 +121,9 @@ img {
     overflow: hidden;
 }
 
-/* Flexibles Schriftgrößen-Design */
+/* Dynamische Schriftgrößen mit clamp für alle Geräte */
 p, h1, h2, h3 {
-    font-size: 3vw;
+    font-size: clamp(1rem, 3vw, 4rem);
     line-height: 1.6;
     max-width: 100%;
     word-wrap: break-word;
@@ -137,7 +137,7 @@ p, h1, h2, h3 {
     }
 
     p, h1, h2, h3 {
-        font-size: 5vw;
+        font-size: clamp(1rem, 5vw, 6rem);
     }
 
     .option {
@@ -155,9 +155,9 @@ p, h1, h2, h3 {
         align-items: center;
         overflow: hidden;
     }
-    
+
     .options {
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 5%;
@@ -178,7 +178,7 @@ p, h1, h2, h3 {
     }
 
     p, h1, h2, h3 {
-        font-size: 2.5vw;
+        font-size: clamp(1.5rem, 2.5vw, 3rem);
         line-height: 1.5;
     }
 
