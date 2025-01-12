@@ -3,12 +3,10 @@
     margin: 20px auto;
     padding: 10px;
     box-sizing: border-box;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .question h2 {
-    font-size: 5vw; 
+    font-size: 5vw;
     text-align: center;
 }
 
@@ -28,7 +26,6 @@
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.2s;
-    flex: 1;
 }
 
 .option:hover {
@@ -100,11 +97,6 @@ img {
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 p, h1, h2, h3 {
@@ -130,12 +122,6 @@ p, h1, h2, h3 {
     .container {
         max-width: 70%;
         padding: 30px;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
     }
 
     p, h1, h2, h3 {
@@ -147,7 +133,6 @@ p, h1, h2, h3 {
         flex-direction: row;
         justify-content: space-between;
         padding: 20px;
-        flex: 1;
     }
 
     .option-image {
@@ -158,12 +143,11 @@ p, h1, h2, h3 {
 /* Querformat-Optimierung für größere Displays */
 @media (orientation: landscape) {
     .container {
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
     }
 
     .option {
