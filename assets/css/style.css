@@ -3,10 +3,12 @@
     margin: 20px auto;
     padding: 10px;
     box-sizing: border-box;
+    height: 100vh; /* Volle Höhe des Viewports nutzen */
+    overflow: hidden; /* Scrollen verhindern */
 }
 
 .question h2 {
-    font-size: 5vw; /* Skaliert die Schriftgröße basierend auf der Bildschirmbreite */
+    font-size: 5vw; 
     text-align: center;
 }
 
@@ -34,13 +36,13 @@
 }
 
 .option-image {
-    max-width: 100%; /* Bild passt sich der Breite des Containers an */
-    height: auto; /* Höhe bleibt proportional */
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
 .option p {
-    font-size: 4vw; /* Flexible Schriftgröße */
+    font-size: 4vw;
     margin-top: 10px;
 }
 
@@ -85,39 +87,35 @@
     background-color: #0056b3;
 }
 
-/* Allgemeine Bild- und Container-Einstellungen */
 img {
-    max-width: 100%; /* Bild passt sich der Breite des Containers an */
-    height: auto;    /* Höhe wird proportional angepasst */
-    display: block;  /* Entfernt Lücken unter Bildern */
-    margin: 0 auto;  /* Zentriert das Bild */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Flexibler Container für Fragen und Inhalte */
 .container {
-    max-width: 90%;    /* Container nimmt max. 90% der Bildschirmbreite ein */
-    margin: auto;       /* Zentriert den Container */
-    padding: 20px;      /* Abstand um den Inhalt */
-    box-sizing: border-box; /* Padding in die Breite einberechnen */
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Responsive Schriftgrößen und Flexibilität */
 p, h1, h2, h3 {
-    font-size: 4vw;           /* Schriftgröße passt sich der Bildschirmbreite an */
-    line-height: 1.6;         /* Bessere Lesbarkeit */
-    max-width: 100%;          /* Maximale Ausbreitung auf Bildschirmbreite */
-    word-wrap: break-word;     /* Verhindert Überlauf langer Wörter */
+    font-size: 4vw;
+    line-height: 1.6;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
-/* Media Query für kleinere Bildschirme */
 @media (max-width: 600px) {
     .container {
-        max-width: 100%;  /* Volle Breite auf kleinen Bildschirmen */
+        max-width: 100%;
         padding: 10px;
     }
 
     p, h1, h2, h3 {
-        font-size: 6vw;  /* Größere Schrift für bessere Lesbarkeit auf kleinen Bildschirmen */
+        font-size: 6vw;
     }
 }
 
@@ -126,6 +124,7 @@ p, h1, h2, h3 {
     .container {
         max-width: 70%;
         padding: 30px;
+        height: 100vh;
     }
 
     p, h1, h2, h3 {
