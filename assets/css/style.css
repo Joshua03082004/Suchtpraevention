@@ -3,8 +3,8 @@
     margin: 20px auto;
     padding: 10px;
     box-sizing: border-box;
-    height: 100vh; /* Volle Höhe des Viewports nutzen */
-    overflow: hidden; /* Scrollen verhindern */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .question h2 {
@@ -125,6 +125,10 @@ p, h1, h2, h3 {
         max-width: 70%;
         padding: 30px;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     p, h1, h2, h3 {
@@ -140,5 +144,26 @@ p, h1, h2, h3 {
 
     .option-image {
         max-width: 40%;
+    }
+}
+
+/* Querformat-Optimierung für größere Displays */
+@media (orientation: landscape) {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .option {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    p, h1, h2, h3 {
+        font-size: 2.5vw;
     }
 }
