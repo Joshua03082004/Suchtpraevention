@@ -213,11 +213,11 @@
     // einfache Kategorisierung nach Score 
     // (bei 10 Fragen => max. 10 Punkte)
     if (score <= 3) {
-      riskLevelText = "Du neigst eher zu sicherem, reflektiertem Verhalten. Deine Risikobereitschaft ist niedrig.";
+      riskLevelText = "Du neigst eher zu sicherem, reflektiertem Verhalten. Deine Risikobereitschaft ist zwar niedrig, sei aber trotzdem Vorsichtig.";
     } else if (score <= 6) {
-      riskLevelText = "Du liebst Abwechslung und probierst schon mal was Neues aus, hältst aber meist noch Grenzen ein.";
+      riskLevelText = "Du liebst Abwechslung und probierst schon mal was Neues aus, hältst aber meist noch Grenzen ein. Bleib aufmerksam!";
     } else {
-      riskLevelText = "Vorsicht! Dein Verlangen nach 'Kicks' oder Rauscherfahrungen könnten dich eher in riskante Situationen bringen.";
+      riskLevelText = "Vorsicht! Dein Verlangen nach 'Kicks' oder Rauscherfahrungen könnten dich eher in riskante Situationen bringen. Achte auf dich und deine Grenzen!";
     }
   
     // HTML-Inhalt für das Ergebnis
