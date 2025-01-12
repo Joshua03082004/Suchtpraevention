@@ -1,3 +1,16 @@
+// Elemente holen
+const startScreen = document.getElementById('start-screen');
+const startButton = document.getElementById('start-btn');
+
+
+// Event Listener für den Start-Button
+startButton.addEventListener('click', () => {
+    startScreen.style.display = 'none';   // Startscreen ausblenden
+    quizContainer.style.display = 'block'; // Quiz anzeigen
+    renderQuestion(); // Quiz starten
+});
+
+
 /***********************************************
  1) QUIZ-FRAGEN
  ***********************************************/

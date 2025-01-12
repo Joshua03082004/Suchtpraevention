@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Suchtprävention - Selbsttest</title>
-      <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="manifest" href="manifest.json">
-  </head>
-  <body>
-      <header>
-          <h1>Suchtprävention - Selbsttest</h1>
-      </header>
-      <main>
-          <div id="quiz-container"></div>
-          <div id="result-container" style="display: none;"></div>
-      </main>
-      <script src="assets/js/app.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchtprävention - Selbsttest</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Startbildschirm -->
+    <div id="start-screen" class="container">
+        <img src="assets/images/icon-192.png" alt="Logo" class="start-logo">
+        <h1>Un*abhängig - Eine Suchtpräventive Ausstellung</h1>
+        <p>Dieser Test ersetzt kein medizinisches/psychologisches Gutachten. Es handelt sich hierbei lediglich um einen Selbsttest!</p>
+        <button id="start-btn">Test starten</button>
+        <p>Viel Spaß!</p>
+    </div>
+
+    <!-- Der eigentliche Test (versteckt) -->
+    <div id="quiz-container" style="display: none;"></div>
+    <div id="result-container" style="display: none;"></div>
+
+    <script src="assets/js/app.js"></script>
+</body>
 </html>
