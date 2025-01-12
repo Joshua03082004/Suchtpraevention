@@ -238,15 +238,15 @@ startButton.addEventListener('click', () => {
       <h2>Ergebnis</h2>
       <p>Dein Score: ${score} von ${quizData.length}</p>
       <p>${riskLevelText}</p>
-      <button id="restart-btn">Nochmal starten</button>
+      <button id="restart-btn">Zurück zur Startseite</button>
     `;
   
     // Button, um das Quiz neu zu starten
     document.getElementById("restart-btn").addEventListener("click", () => {
+      resultContainer.style.display = "none";
+      startScreen.style.display = "block";
       currentQuestionIndex = 0;
       score = 0;
-      resultContainer.style.display = "none";
-      quizContainer.style.display = "block";
       renderQuestion();
     });
   }
