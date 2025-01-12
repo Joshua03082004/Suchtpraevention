@@ -116,7 +116,7 @@
       optionB: {
         text: "Stimmt total – ich brauche immer irgendwas Neues, notfalls auch riskant",
         riskPoints: 1,
-        image: "assets/images/alway-need-kicks.jpg",
+        image: "assets/images/always-need-kicks.jpg",
       },
     },
     {
