@@ -1,161 +1,126 @@
-#quiz-container, #result-container {
-    max-width: 90%;
-    margin: 20px auto;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.question h2 {
-    font-size: 5vw;
-    text-align: center;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.option:hover {
-    transform: scale(1.05);
-    background-color: #f0f0f0;
-}
-
-.option-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.option p {
-    font-size: 4vw;
-    margin-top: 10px;
-}
-
-@media (max-width: 600px) {
-    .option p {
-        font-size: 5vw;
-    }
-
-    .question h2 {
-        font-size: 6vw;
-    }
-
-    .option {
-        padding: 8px;
-    }
-}
-
-#result-container h2 {
-    font-size: 6vw;
-    text-align: center;
-}
-
-#result-container p {
-    font-size: 4vw;
-    text-align: center;
-    margin: 10px 0;
-}
-
-#restart-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 4vw;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#restart-btn:hover {
-    background-color: #0056b3;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.container {
-    max-width: 90%;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-p, h1, h2, h3 {
-    font-size: 4vw;
-    line-height: 1.6;
-    max-width: 100%;
-    word-wrap: break-word;
-}
-
-@media (max-width: 600px) {
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    p, h1, h2, h3 {
-        font-size: 6vw;
-    }
-}
-
-/* Optimierung für größere Displays wie iPad Air 4th Gen */
-@media (min-width: 820px) {
-    .container {
-        max-width: 70%;
-        padding: 30px;
-    }
-
-    p, h1, h2, h3 {
-        font-size: 2vw;
-        line-height: 1.5;
-    }
-
-    .option {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    .option-image {
-        max-width: 40%;
-    }
-}
-
-/* Querformat-Optimierung für größere Displays */
 @media (orientation: landscape) {
-    .container {
+
+    #quiz-container, #result-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+    
+    .question h2 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+    
+    .option:hover {
+        transform: scale(1.05);
+        background-color: #f0f0f0;
+    }
+    
+    .option-image {
+        max-width: 100%;
         height: auto;
+        border-radius: 5px;
+    }
+    
+    .option p {
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    
+    #result-container h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+    
+    #result-container p {
+        font-size: 4vw;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    #restart-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 4vw;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #restart-btn:hover {
+        background-color: #0056b3;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .container {
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .option {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+    
     p, h1, h2, h3 {
-        font-size: 2.5vw;
+        font-size: 4vw;
+        line-height: 1.6;
+        max-width: 100%;
+        word-wrap: break-word;
     }
-}
+    
+    /* Optimierung für größere Displays wie iPad Air 4th Gen */
+    @media (min-width: 820px) {
+        .container {
+            max-width: 70%;
+            padding: 30px;
+        }
+    
+        p, h1, h2, h3 {
+            font-size: 2vw;
+            line-height: 1.5;
+        }
+    
+        .option {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    
+        .option-image {
+            max-width: 40%;
+        }
+    }
+    }
+    
