@@ -10,7 +10,7 @@
         image: "assets/images/friends-chill.jpg", 
       },
       optionB: {
-        text: "Eine ausgedehnte Partynacht mit Alkohol",
+        text: "Eine ausgedehnte Partynacht mit Alkohol (oder anderen Substanzen)",
         riskPoints: 1,
         image: "assets/images/party-night.jpg",
       },
@@ -23,7 +23,7 @@
         image: "assets/images/nature-walk.jpg",
       },
       optionB: {
-        text: "Planlos 'abhängen' und nichts tun, evtl. ein paar Drinks",
+        text: "Planlos 'abhängen' und nichts tun, evtl. ein paar Drinks (oder andere Substanzen)",
         riskPoints: 1,
         image: "assets/images/hanging-out.jpg",
       },

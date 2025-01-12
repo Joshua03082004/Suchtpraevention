@@ -7,32 +7,39 @@
         box-sizing: border-box;
         height: 100vh;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .question h2 {
-        font-size: 5vw;
+        font-size: 4vw;
         text-align: center;
     }
     
     .options {
         display: flex;
         flex-direction: row; /* Optionen nebeneinander */
-        justify-content: space-around;
-        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        height: 50%;
     }
     
     .option {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         padding: 10px;
         border: 2px solid #ccc;
         border-radius: 10px;
         text-align: center;
         cursor: pointer;
         transition: transform 0.2s, background-color 0.2s;
-        flex: 1; /* Gleiche Breite für beide Optionen */
-        max-width: 45%;
+        flex: 1;
+        max-width: 40%;
+        height: 100%;
     }
     
     .option:hover {
@@ -47,17 +54,17 @@
     }
     
     .option p {
-        font-size: 4vw;
+        font-size: 3vw;
         margin-top: 10px;
     }
     
     #result-container h2 {
-        font-size: 6vw;
+        font-size: 4vw;
         text-align: center;
     }
     
     #result-container p {
-        font-size: 4vw;
+        font-size: 3vw;
         text-align: center;
         margin: 10px 0;
     }
@@ -66,7 +73,7 @@
         display: block;
         margin: 20px auto;
         padding: 10px 20px;
-        font-size: 4vw;
+        font-size: 3vw;
         border: none;
         background-color: #007BFF;
         color: white;
@@ -117,13 +124,13 @@
         }
     
         .option {
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: space-around;
             padding: 20px;
         }
     
         .option-image {
-            max-width: 40%;
+            max-width: 80%;
         }
     }
     }
