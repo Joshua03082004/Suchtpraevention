@@ -46,6 +46,7 @@
     transition: transform 0.2s, background-color 0.2s;
     flex: 1 1 45%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .option:hover {
@@ -56,9 +57,9 @@
 /* Stil für die Bilder in den Optionen */
 .option-image {
     max-width: 100%;
-    max-height: 40vh; /* Bilder passen sich der Bildschirmhöhe an */
+    max-height: 35vh; /* Noch stärkere Begrenzung der Bildhöhe */
     height: auto;
-    object-fit: contain; /* Bild bleibt vollständig sichtbar, ohne gestreckt zu werden */
+    object-fit: contain;
     border-radius: 5px;
 }
 
@@ -67,6 +68,8 @@
     font-size: clamp(1rem, 2.5vw, 3rem);
     margin-top: 10px;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Stil für das Ergebniscontainer */
@@ -190,7 +193,7 @@ p, h1, h2, h3 {
 
     .option-image {
         max-width: 100%;
-        max-height: 40vh;
+        max-height: 35vh;
         object-fit: contain;
     }
 }
