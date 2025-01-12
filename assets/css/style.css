@@ -84,3 +84,39 @@
 #restart-btn:hover {
     background-color: #0056b3;
 }
+
+/* Allgemeine Bild- und Container-Einstellungen */
+img {
+    max-width: 100%; /* Bild passt sich der Breite des Containers an */
+    height: auto;    /* Höhe wird proportional angepasst */
+    display: block;  /* Entfernt Lücken unter Bildern */
+    margin: 0 auto;  /* Zentriert das Bild */
+}
+
+/* Flexibler Container für Fragen und Inhalte */
+.container {
+    max-width: 90%;    /* Container nimmt max. 90% der Bildschirmbreite ein */
+    margin: auto;       /* Zentriert den Container */
+    padding: 20px;      /* Abstand um den Inhalt */
+    box-sizing: border-box; /* Padding in die Breite einberechnen */
+}
+
+/* Responsive Schriftgrößen und Flexibilität */
+p, h1, h2, h3 {
+    font-size: 4vw;           /* Schriftgröße passt sich der Bildschirmbreite an */
+    line-height: 1.6;         /* Bessere Lesbarkeit */
+    max-width: 100%;          /* Maximale Ausbreitung auf Bildschirmbreite */
+    word-wrap: break-word;     /* Verhindert Überlauf langer Wörter */
+}
+
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;  /* Volle Breite auf kleinen Bildschirmen */
+        padding: 10px;
+    }
+
+    p, h1, h2, h3 {
+        font-size: 6vw;  /* Größere Schrift für bessere Lesbarkeit auf kleinen Bildschirmen */
+    }
+}
