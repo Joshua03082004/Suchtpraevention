@@ -120,3 +120,26 @@ p, h1, h2, h3 {
         font-size: 6vw;  /* Größere Schrift für bessere Lesbarkeit auf kleinen Bildschirmen */
     }
 }
+
+/* Optimierung für größere Displays wie iPad Air 4th Gen */
+@media (min-width: 820px) {
+    .container {
+        max-width: 70%;
+        padding: 30px;
+    }
+
+    p, h1, h2, h3 {
+        font-size: 2vw;
+        line-height: 1.5;
+    }
+
+    .option {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .option-image {
+        max-width: 40%;
+    }
+}
