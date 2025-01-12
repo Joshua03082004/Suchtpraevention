@@ -238,3 +238,11 @@
     });
   }
   renderQuestion();
+  window.addEventListener("resize", function () {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        alert("Bitte drehe dein Gerät ins Querformat!");
+        document.body.style.display = "none";
+    } else {
+        document.body.style.display = "block";
+    }
+});

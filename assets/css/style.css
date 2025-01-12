@@ -124,3 +124,9 @@
     }
     }
     
+    /* Nur Querformat erlauben */
+@media (orientation: portrait) {
+    body {
+        display: none;
+    }
+}
